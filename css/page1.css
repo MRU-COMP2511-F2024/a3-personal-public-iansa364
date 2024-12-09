@@ -1,0 +1,84 @@
+div {
+    display: grid;
+    grid-template-columns: 1/3;
+    grid-template-rows: 1/3;
+}
+
+.screenshot {
+    grid-column: 1/2;
+    background-color: white;
+    margin-left: 15%;
+  
+}
+
+figure {
+    width: 80%;
+    margin-top: 25%;
+
+}
+
+figure img {
+    width: 90%;
+}
+figcaption {
+    font-size: 1em;
+}
+
+/* for the second page github logo with embedded link */
+#github {
+    width: 80%;
+    text-align: center;
+  
+}
+
+.link {
+    grid-column: 2/3;
+    background-color: white;
+    margin-left: 15%;
+}
+
+.reflection {
+    grid-column: 1/3;
+    background-color: pink;
+    color: black;
+
+}
+
+section img {
+    width: 100%;
+}
+
+
+/* for homepage */
+video {
+    width: 100%;
+}
+
+h2, h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* for small device */
+@media only screen and (max-width: 580px) {
+    div {
+        display: grid;
+        grid-template-columns: 1fr; /*single column for small devices*/
+    }
+
+    .screenshot, .link{
+        grid-column: 1/2;
+        width: 80%;
+    }
+
+
+}
+
+/* for medium device */
+@media only screen and (min-width: 581px) and (max-width: 750px) {
+    section {
+        font-size: 1.2em;
+    }
+    
+}

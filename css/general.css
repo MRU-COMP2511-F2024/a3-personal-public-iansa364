@@ -1,0 +1,86 @@
+header {
+    background-color: black;
+    padding: 10%;
+}
+
+header h1 {
+    font-size: 450%;
+    color: pink;
+    text-align: center;
+}
+
+/* nav {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 35%;
+
+} */
+
+nav {
+    background-color: pink;
+    position: absolute;
+    top: 100%;
+    right: 0; 
+}
+
+
+
+/* nav a {
+    border: 2px solid pink;
+    border-radius: 20%;
+    padding: 10px;
+    color: black;
+    background-color: pink;
+    margin-right: 15px;
+    margin-left: 15px;
+} */
+
+section {
+    margin-top: 25%;
+    padding: 5%;
+    background-color: black;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    color: white;
+    line-height: 2.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10%;
+}
+
+
+
+footer {
+    background-color: black;
+    padding: 6%;
+    color: pink;
+    margin-top: 10%;
+    text-align: center;
+    
+}
+
+footer img {
+    width: 5%;
+} 
+
+/* accessibility */
+nav .nav-link:focus {
+    outline: 2px solid black; 
+    color: black; 
+    cursor:pointer;
+}
+
+
+
+/* for small device */
+@media only screen and (max-width: 580px) {
+
+
+}
+
+/* for medium device */
+@media only screen and (min-width: 581px) and (max-width: 750px) {
+
+}

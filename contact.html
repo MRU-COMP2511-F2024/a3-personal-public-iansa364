@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Information</title>
+    <!--<link> to Bootstrap’s “minified” CSS in the head. Included bootstrap via CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="css/general.css" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-sm w-100 position-absolute top-0">
+            <!--navbar class used to expand the navbar across the header and the sm is the breakpoint for the the hamburger nav, width is 100 and used position absolute to position the nav bar at the top-->
+            <!-- the button is the hamburger menu for the small screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  justify-content-around" id="navbarNav">
+                <!--id of data-bs-target and the div using collapse class from bootstrap must match-->
+                <a class="nav-link" href="Home.html" title="home">Home</a>
+                <a class="nav-link" href="page1.html" title="artifact1" target="_blank">Artifact 1</a>
+                <a class="nav-link" href="page2.html" title="artifact2">Artifact 2</a>
+                <a class="nav-link" href="page3.html" title="artifact3">Artifact 3</a>
+                <a class="nav-link" href="page4.html" title="artifact4">Artifact 4</a>
+                <a class="nav-link" href="contact.html" title="contact">Contact</a>
+            </div>
+        </nav>
+        <h1>Contact</h1>
+    </header>
+        <form id="form-one" method="post" action="mailto:iansa364@mtroyal.ca">
+            <dl>
+                <div class="fname">
+                    <dt>
+                        <label for="first-name">First Name*</label>
+                    </dt>
+                    <dd>
+                        <input id="first-name" name="fname" type="text" placeholder="Enter your first name" autofocus
+                            required>
+                    </dd>
+                </div>
+                <div class="lname">
+                    <dt>
+                        <label for="last-name">Last Name*</label>
+                    </dt>
+                    <dd>
+                        <input id="last-name" name="lname" type="text" placeholder="Enter your last name" required>
+                    </dd>
+                </div>
+                <div class="email">
+                    <dt>
+                        <label for="email">Email*</label>
+                    </dt>
+                    <dd>
+                        <input id="email" name="email" type="email" placeholder="person@gmail.com"
+                            pattern="[a-zA-Z0-9]+[a-z0-9._-]+\.[a-z]{2,}$" required>
+
+                    </dd>
+                </div>
+                <div class="phone">
+                    <dt>
+                        <label for="phone-number">Phone*</label>
+                    </dt>
+                    <dd>
+                        <input id="phone-number" name="phone" type="tel" placeholder="123-456-789"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required> <!--pattersn: 3 number within the range 0-9, followed by a dash, then again 3 number within the range 0-9 then 
+                            a dash and then 4 number within the range 0-9-->
+
+                    </dd>
+                </div>
+                <div class="subject">
+                    <dt>
+                        <label for="subject">Subject*</label>
+                    </dt>
+                    <dd>
+                        <input id="subject" name="subject" type="text" required>
+
+                    </dd>
+                </div>
+
+                <div class="message">
+                    <dt>
+                        <label for="message">Message*</label>
+                    </dt>
+                    <dd>
+                        <textarea id="message" name="message" cols="40" required></textarea>
+
+                    </dd>
+                </div>
+            </dl>
+            <div class="controls">
+                <input id="submit" type="submit" value="Submit">
+                <input id="clear" type="reset" value="Clear">
+            </div>
+        </form>
+
+    <!-- the script is for javascript files of Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+<footer>
+    <p>Email: iansa364@mtroyal.ca | Phone: 123-456-789 </p>
+</footer>
+
+</html>
